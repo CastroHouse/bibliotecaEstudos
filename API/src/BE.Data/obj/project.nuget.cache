@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/K6cvE5NHLJoCNtFNC6QLCWs0SNgXamp3fOBiif3GJR0EVZCHQEuJACH+ckOMJrQ8lF/R7y/2tzncThBityA/g==",
+  "dgSpecHash": "tyDZNj2y3PW3YJxtPSpfBYKrV3kofG2ImoVIo7eKKt1q32x67nZj1Bvi7DS86QD9Jm91W6bl/LBQekYjh7GpMg==",
   "success": true,
   "projectFilePath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Data/BE.Data.csproj",
   "expectedPackageFiles": [

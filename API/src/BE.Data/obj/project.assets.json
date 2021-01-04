@@ -1581,6 +1581,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BE.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BE.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BE.Core.dll": {}
+        }
       }
     }
   },
@@ -5942,10 +5952,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BE.Core/1.0.0": {
+      "type": "project",
+      "path": "../BE.Core/BE.Core.csproj",
+      "msbuildProject": "../BE.Core/BE.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BE.Core >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Abstractions >= 5.0.1",
@@ -5978,7 +5994,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj": {
+              "projectPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

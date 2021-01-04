@@ -12,6 +12,10 @@ namespace BE.Data.Contexts
             
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Entity>().HasQueryFilter(p => !p.Ativo);
+        }
         public async Task<bool> Commit()
         {
             return await base.SaveChangesAsync() > 0;

@@ -18,7 +18,7 @@ namespace BE.API.Configuration
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDefaultIdentity<IdentityUser>()
-            .AddRoles<IdentityUser>()
+            .AddRoles<IdentityRole>()
             .AddErrorDescriber<IdentityMensagensPortugues>()
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();

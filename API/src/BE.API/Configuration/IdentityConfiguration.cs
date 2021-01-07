@@ -2,12 +2,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using BE.Data.Contexts;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using BE.API.Extensions;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System;
+using BE.Domain.Entities;
 
 namespace BE.API.Configuration
 {
@@ -15,10 +16,9 @@ namespace BE.API.Configuration
     {
         public static IServiceCollection AddIdentityConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>()
-            .AddRoles<IdentityRole>()
+            services.AddIdentity<ApplicationUser, IdentityRole<Guid>>()
+            //.AddRoles<IdentityRole>()
             .AddErrorDescriber<IdentityMensagensPortugues>()
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();

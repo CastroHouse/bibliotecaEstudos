@@ -4,14 +4,14 @@
     "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj": {}
   },
   "projects": {
-    "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj": {
+    "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj",
-        "projectName": "BE.Domain",
-        "projectPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj",
+        "projectUniqueName": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj",
+        "projectName": "BE.Core",
+        "projectPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj",
         "packagesPath": "/home/zerocoll/.nuget/packages/",
-        "outputPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/obj/",
+        "outputPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/zerocoll/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,68 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj",
+        "projectName": "BE.Domain",
+        "projectPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj",
+        "packagesPath": "/home/zerocoll/.nuget/packages/",
+        "outputPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/zerocoll/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj": {
+                "projectPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

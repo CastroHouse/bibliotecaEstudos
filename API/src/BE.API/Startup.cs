@@ -27,9 +27,23 @@ namespace BE.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Configurações do Banco de Dados
+            services.AddDatabaseConfiguration(Configuration);
+
+            //Configurações do Identity
             services.AddIdentityConfiguration(Configuration);
+
+            //Configurações do AutoMapper
+            services.AddAutoMapperConfiguration();
+
+            //Configurações da API
             services.AddApiConfiguration();
+
+            //Configurações do Swagger
             services.AddSwaggerConfiguration();
+
+            //Configurações da injeção de dependencia
+            services.AddDependencyInjectionConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

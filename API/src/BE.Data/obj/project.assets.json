@@ -1591,6 +1591,20 @@
         "runtime": {
           "bin/placeholder/BE.Core.dll": {}
         }
+      },
+      "BE.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BE.Core": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/BE.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BE.Domain.dll": {}
+        }
       }
     }
   },
@@ -5957,11 +5971,17 @@
       "type": "project",
       "path": "../BE.Core/BE.Core.csproj",
       "msbuildProject": "../BE.Core/BE.Core.csproj"
+    },
+    "BE.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BE.Domain/BE.Domain.csproj",
+      "msbuildProject": "../BE.Domain/BE.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "BE.Core >= 1.0.0",
+      "BE.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Abstractions >= 5.0.1",
@@ -5997,6 +6017,9 @@
           "projectReferences": {
             "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj": {
               "projectPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Core/BE.Core.csproj"
+            },
+            "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj": {
+              "projectPath": "/home/zerocoll/Documents/Projetos/bibliotecaEstudos/API/src/BE.Domain/BE.Domain.csproj"
             }
           }
         }

@@ -6,7 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using BE.API.Dtos.Auth;
+using BE.Domain.Dtos.Auth;
 using BE.API.Extensions;
 using BE.Domain.Entities;
 using Microsoft.AspNetCore.Identity;

@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
-using BE.Data.Contexts;
+using BE.Infra.Data.Contexts;
 using Microsoft.AspNetCore.Identity;
 using BE.API.Extensions;
 using System.Text;
@@ -20,7 +20,7 @@ namespace BE.API.Configuration
             services.AddIdentity<ApplicationUser, IdentityRole<Guid>>()
             //.AddRoles<IdentityRole>()
             .AddErrorDescriber<IdentityMensagensPortugues>()
-            .AddEntityFrameworkStores<AppDbContext>()
+            .AddEntityFrameworkStores<BibliotecaDBContext>()
             .AddDefaultTokenProviders();
 
             var appSettingsSection = configuration.GetSection("AppSettings");

@@ -1,4 +1,4 @@
-using BE.Core.Data;
+using BE.Domain.Data;
 using BE.Domain.Entities;
 
 namespace BE.Domain.Interfaces.Repositories
@@ -7,4 +7,6 @@ namespace BE.Domain.Interfaces.Repositories
     {
         
     }
+
+    
 }

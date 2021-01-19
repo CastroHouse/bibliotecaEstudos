@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 using AutoMapper;
-using BE.API.Dtos.Usuarios;
+using BE.Domain.Dtos.Usuarios;
 using BE.Domain.Entities;
 using BE.Domain.Interfaces.Repositories;
 using Microsoft.AspNetCore.Authorization;

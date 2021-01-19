@@ -1,17 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
 using BE.API.Configuration;
+using BE.Infra.IoC;
 
 namespace BE.API
 {
@@ -28,7 +21,7 @@ namespace BE.API
         public void ConfigureServices(IServiceCollection services)
         {
             //Configurações do Banco de Dados
-            services.AddDatabaseConfiguration(Configuration);
+            services.AddDatabaseConfiguration();
 
             //Configurações do Identity
             services.AddIdentityConfiguration(Configuration);
@@ -43,6 +36,7 @@ namespace BE.API
             services.AddSwaggerConfiguration();
 
             //Configurações da injeção de dependencia
+            
             services.AddDependencyInjectionConfiguration();
         }
 

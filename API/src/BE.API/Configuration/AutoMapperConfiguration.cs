@@ -1,7 +1,6 @@
 using System;
 using AutoMapper;
-using BE.API.AutoMapper.EnderecoMapping;
-using BE.API.AutoMapper.UsuarioMapping;
+using BE.API.AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BE.API.Configuration
@@ -14,6 +13,7 @@ namespace BE.API.Configuration
 
 			services.AddAutoMapper(typeof(UsuarioMappingProfile));
             services.AddAutoMapper(typeof(EnderecoMappingProfile));
+            services.AddAutoMapper(typeof(EditoraMappingProfile));
             
             return services;
         }

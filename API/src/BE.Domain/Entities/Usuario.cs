@@ -1,4 +1,4 @@
-using BE.Core.DomainObjects;
+using BE.Domain.Objects;
 using System;
 
 namespace BE.Domain.Entities
@@ -8,7 +8,7 @@ namespace BE.Domain.Entities
         public string Nome { get;  private set; }
         public string SegundoNome { get;  private set; }
         public Guid UserId {get; private set;}
-        public string Cpf { get;  private set; }
+        public Cpf Cpf { get;  private set; }
         public Endereco Endereco { get; private set; }
         public virtual ApplicationUser User {get; private set;}
         public override void Validar()

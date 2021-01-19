@@ -1,6 +1,8 @@
 # bibliotecaEstudos
 O projeto de estudos, o objetivo é criar back e front de um sistema que registra a leitura de livros.
 
+Trelo para organização do projeto -> https://trello.com/projetospublicos1
+
 #API Back-End .Net 5
 
 # CAMADAS
